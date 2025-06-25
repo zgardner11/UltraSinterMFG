@@ -386,8 +386,11 @@ nav a::before {
   margin: auto;
 }
 
+.home-img{
+  min-width: 15rem;
+}
 
-#home-quote{
+#home-samples{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -396,7 +399,7 @@ nav a::before {
   background-color: var(--alt);
 }
 
-.home-quote-box{
+.home-samples-box{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -637,13 +640,21 @@ nav a::before {
   font-weight: 700;
   padding: 1rem 2rem;
   border: var(--alt) solid 2px;
-  border-radius: 3px;
+  border-radius: 5px;
   transition: all 150ms ease-in;
 }
 
-
 .product-info a:hover{
   background: var(--alt);
+}
+
+.product-buy-button{
+  background: var(--main);
+}
+
+.product-info-button.product-buy-button:hover{
+  background: var(--dark);
+  color: var(--main);
 }
 
 #main-products header{
@@ -875,9 +886,23 @@ footer ul li:hover{
   margin: auto;
 }
 
+.footer-item a{
+  color: var(--main);
+  border-bottom: var(--main) solid 2px;
+  font-size: 1rem;
+}
+
+.footer-item a:hover{
+  font-size: 1.05rem;
+  transition: all 200ms ease-in-out;
+}
+
 .footer-item h3{
-  padding-bottom: 2rem;
+  padding-bottom: .2rem;
   font-size: var(--mediumfont);
+  border-bottom: var(--main) solid 2px;
+  width: fit-content;
+  margin: 0 auto 2rem;
 }
 
 #logo.instagram{
@@ -904,6 +929,11 @@ and (max-width: 1240px)
     /* hide navigation when off screen */
     overflow-x: hidden;
     scroll-padding-top: 0;
+  }
+
+  img {
+  width: 100%; /*keep images inside box container*/
+  max-width: 500px;
   }
 
 /*  Navigation  */
@@ -1055,13 +1085,15 @@ and (max-width: 1240px)
 
   .home-banner-inner{
     width: 100%;
-    padding: 2em;
+    padding: 2rem 0;
     flex-direction: column;
     gap: 2rem;
     height: auto;
   }
 
   h1{
+    position: relative;
+    left: -1rem;
     font-size: var(--largefont);
     text-align: center;
   }  
@@ -1069,10 +1101,20 @@ and (max-width: 1240px)
   .usa-header{
     text-wrap: wrap;
     padding: 2rem;
+    bottom: 0;
+  }
+
+  .home-samples-box{
+    flex-direction: column;
   }
 
   .home-img{
     order: -1;
+    padding: 2rem;
+  }
+
+  .home-text{
+    width: 75%;
   }
 
   .product .flip-card{
@@ -1088,20 +1130,27 @@ and (max-width: 1240px)
     height: var(--mobile-card-height);
   }
 
-  /* Apparel */
-  
-  #main-products.apparel-page{
-    padding: 2em;
+  /* Product */
+
+  .product{
+    width: 75%;
+    margin: auto;
   }
 
-  #main-products.apparel-page h2{
-    margin-bottom: 1rem;
+  .home-samples-box{
+    padding: 0;
   }
 
+  #main-products{
+    padding: 4rem 0;
+    gap: 2rem;
+  }
+
+  .products-wrap{
+    flex-direction: column;
+  }
 
   /* Contact */
-
-  /* Media */
 
   /* Footer */
 
@@ -1119,6 +1168,14 @@ and (max-width: 1240px)
 
   footer .newsletter input{
     padding: .5em;
+  }
+
+  .footer-item h3{
+    width: 50%;
+  }
+
+  .footer-item{
+    margin: 3rem auto;
   }
 
   footer #logo{
