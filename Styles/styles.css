@@ -588,7 +588,6 @@ nav a::before {
   justify-content: space-evenly;
   align-items: center;
   gap: 3rem;
-  border-radius: 7px;
   height: fit-content;
   padding: 2rem;
   margin: auto;
@@ -812,7 +811,6 @@ nav a::before {
 
 #contact header h2{
   position: relative;
-  font-size: var(--headerfont);
   padding-bottom: 1em;
   margin-bottom: 1.5em;
   color: var(--dark);
@@ -1008,7 +1006,6 @@ and (max-width: 1240px)
   }
 
   #logo{
-    width: 10em;
     top: 0;
   }
   
@@ -1032,11 +1029,11 @@ and (max-width: 1240px)
   
   #logo-mobile{
     position: relative;
-    height: 100%;
-    width: 10vh;
-    padding: .7em;
+    width: 12vh;
+    aspect-ratio: 4/3;
+    padding: 1em;
   }
-  
+
   .navlinks{
     display: flex;
     position: relative;
@@ -1070,11 +1067,12 @@ and (max-width: 1240px)
   
   .navlinks ul li a {
     position: relative;
-    color: var(--main);
+    color: var(--dark);
     width: auto;
     height: 100%;
     align-items: center;
     font-size: var(--smallfont);
+    font-weight: 700;
   }
   
   .navlinks ul li a::after{
@@ -1084,7 +1082,7 @@ and (max-width: 1240px)
     bottom: 0;
     height: 4px;
     border-radius: 50%;
-    background-color: var(--alt);
+    background-color: var(--dark);
     opacity: .5;
   }
 
@@ -1118,6 +1116,10 @@ and (max-width: 1240px)
     flex-direction: column;
     gap: 2rem;
     height: auto;
+  }
+
+  #home-samples{
+    display: none;
   }
 
   h1{
@@ -1155,10 +1157,6 @@ and (max-width: 1240px)
     transform: rotateY(180deg);
   }
 
-  .flip-card-front img{
-    height: var(--mobile-card-height);
-  }
-
   /* Product */
 
   .product{
@@ -1176,12 +1174,13 @@ and (max-width: 1240px)
     margin: auto;
   }
 
-  .home-samples-box{
+  .product-mobile-img-alt{
+    order: -1;
     padding: 0;
   }
 
   #main-products{
-    padding: 4rem 0;
+    padding-top: 2rem;
     gap: 2rem;
   }
 
@@ -1195,6 +1194,7 @@ and (max-width: 1240px)
 
   footer{
     padding: 2em 0 5em;
+    margin-top: 5rem;
   }
 
   footer ul{
