@@ -1180,7 +1180,7 @@ and (max-width: 1240px)
   }
 
   #main-products{
-    padding: 0;
+    padding: 2rem 0 0;
     gap: 2rem;
   }
 
