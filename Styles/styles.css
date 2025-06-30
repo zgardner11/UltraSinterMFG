@@ -1139,7 +1139,7 @@ and (max-width: 1240px)
     flex-direction: column;
   }
 
-  .home-img{
+  .home-img-mobile{
     order: -1;
     padding: 2rem;
   }
