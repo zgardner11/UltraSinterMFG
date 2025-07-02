@@ -10,10 +10,10 @@
 
 :root {
 
-  --main:#e2e8f3;
-  --alt: #a8b7c6;
-  --dark: rgb(60, 58, 65);
-  --red: rgb(146, 14, 14);
+  --main:#697283;
+  --alt: #323748;
+  --dark: #f8faff;
+  --red: #323748;
 
   --main-bg-color: linear-gradient(
    to bottom,
@@ -329,9 +329,14 @@ nav a::before {
 
 #logo{
   position: relative;
-  width: 5em;
+  width: 4em;
   top: .2em;
   max-height: 3em;
+  border-radius: 50%;
+}
+
+#logo img{
+  object-fit: scale-down;
 }
 
 #logo-mobile-outer{
@@ -389,6 +394,11 @@ nav a::before {
 
 .home-img{
   min-width: 15rem;
+  width: 100vw;
+}
+
+.home-img img{
+  border-radius: 2px;
 }
 
 #home-samples{
@@ -498,6 +508,42 @@ nav a::before {
   transform: scale(.02);
 }
 
+#home-quote{
+  display: flex;
+  flex-direction: column;
+  background: var(--alt);
+  height: fit-content;
+  padding: 2em;
+}
+
+#home-quote header h2{
+  color: var(--main);
+  font-weight: 700;
+  text-align: center;
+  margin: 3rem 0 0;
+}
+
+#home-quote header h2::after{
+  position: absolute;
+  content: '';
+  width: 25%;
+  bottom: -13vh;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 50%;
+  background-color: var(--main);
+  opacity: .5;
+  margin: auto;
+}
+
+.home-instant-quote embed{
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  padding: 7em;
+}
+
 .quote-button a{
   background: var(--alt);
   color: var(--dark);
@@ -538,7 +584,7 @@ nav a::before {
 .products-header h2{
   position: relative;
   color: var(--dark);
-  padding-bottom: 1rem;
+  padding: 2rem;
 }
 
 .products-header h2::after{
@@ -1186,6 +1232,10 @@ and (max-width: 1240px)
 
   .products-wrap{
     flex-direction: column;
+  }
+
+  .products-header h2{
+    margin-bottom: 3rem;
   }
 
   /* Contact */
