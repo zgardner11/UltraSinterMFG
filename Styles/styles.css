@@ -564,7 +564,7 @@ nav a::before {
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
-  padding: 7rem 5rem;
+  padding: 3rem 5rem;
   gap: 5rem;
   font-weight: 400;
 }
@@ -890,11 +890,11 @@ nav a::before {
 footer{
   position: relative;
   bottom: 0;
-  background-color: var(--white);
+  background-color: var(--alt);
   text-align: center;
   font-weight: 300;
   padding: 4em;
-  color: var(--main);
+  color: var(--white);
   border-top: var(--main) solid 2px;
 }
 
@@ -925,10 +925,10 @@ footer ul{
 }
 
 footer ul li a{
-  color: var(--main);
+  color: var(--white);
   padding-bottom: .5em;
   border-radius: 5%;
-  border-bottom: var(--main) solid 2px;
+  border-bottom: var(--white) solid 2px;
 }
 
 footer ul li{
@@ -947,8 +947,8 @@ footer ul li:hover{
 }
 
 .footer-item a{
-  color: var(--alt);
-  border-bottom: var(--main) solid 2px;
+  color: var(--white);
+  border-bottom: var(--white) solid 2px;
   font-size: 1rem;
 }
 
@@ -960,13 +960,9 @@ footer ul li:hover{
 .footer-item h3{
   padding-bottom: .2rem;
   font-size: var(--mediumfont);
-  border-bottom: var(--main) solid 2px;
+  border-bottom: var(--white) solid 2px;
   width: fit-content;
   margin: 0 auto 2rem;
-}
-
-.footer-item *{
-  color: var(--alt);
 }
 
 #logo.instagram{
