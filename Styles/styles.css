@@ -90,7 +90,7 @@ h1 {
   opacity: 85%;
   text-shadow: -1px 1px 3px var(--alt);
   transition: all 300ms ease-out;
-  box-shadow: -2px 2px 1px rgba(0, 0, 11, 0.219);
+  box-shadow: -2px 2px 1px rgba(0, 0, 33, 0.347);
   padding: 0 .75em .5em;
 }
 
@@ -179,7 +179,7 @@ button{
   margin-right: auto;
   background-color: var(--main);
   z-index: 1111;
-  border-bottom: var(--alt) solid 2px;
+  border-bottom: var(--white) solid 2px;
 }
 
 .navlinks{
@@ -201,7 +201,7 @@ button{
 .navlinks ul li{
   flex: 1;
   position: relative;
-  border-right: 2px solid var(--alt);
+  border-right: 2px solid var(--white);
 }
 
 .navlinks ul li:last-child{
@@ -222,10 +222,6 @@ button{
   font-size: var(--textfont);
 }
 
-.navlinks ul li:last-child > a:hover::after{
-  background: var(--alt);
-}
-  
 .navlinks-menu > li > a:hover {
   opacity: 100%;
   font-weight: 700;
@@ -251,7 +247,7 @@ button{
   width: 0%;
   content: '.';
   color: transparent;
-  background: var(--alt);
+  background: var(--white);
   height: 2px;
 }
 
@@ -463,7 +459,7 @@ nav a::before {
   font-size: var(--smallfont);
   font-weight: 400;
   opacity: 92%;
-  box-shadow: -1px 4px 10px 0 rgba(11, 11, 11, 0.5);
+  box-shadow: -2px 2px 1px rgba(0, 0, 33, 0.347);
 }
 
 .main-header a:hover{
@@ -560,17 +556,6 @@ nav a::before {
   transform: scale(1.04);
 }
 
-.header-button-two{
-  background: none;
-  box-shadow: none;
-  margin: 2em auto 5em;
-}
-
-.header-button-two a{
-  width: fit-content;
-  padding-right: 5em;
-}
-
 #main-products{
   position: relative;
   display: flex;
@@ -655,11 +640,11 @@ nav a::before {
   padding: 2rem;
   max-width: 20ch;
   text-align: center;
-  box-shadow: -2px 2px 1px rgba(0, 0, 11, 0.219);
+  box-shadow: -2px 2px 1px rgba(0, 0, 33, 0.347);
 }
 
 .product-info-alt h3{
-  box-shadow: 2px 2px 1px rgba(0, 0, 11, 0.219);
+  box-shadow: 2px 2px 1px rgba(0, 0, 33, 0.347);
 }
 
 .product .flip-card{
@@ -1041,9 +1026,8 @@ and (max-width: 1240px)
   .burger .bar{
     height: .1rem;
     width: 100%;
-    background-color: var(--alt);
+    background-color: var(--white);
     border-radius: 1rem; 
-    opacity: 75%;
     transition: all .5s ease-out;
   }
 
