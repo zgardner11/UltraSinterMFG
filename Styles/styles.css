@@ -672,13 +672,14 @@ nav a::before {
   color: var(--white);
   font-weight: 700;
   padding: 1rem 2rem;
-  border: var(--alt) solid 2px;
+  border: var(--white) solid 2px;
   border-radius: 5px;
   transition: all 150ms ease-in;
 }
 
 .product-info a:hover{
-  background: var(--alt);
+  background: var(--white);
+  color: var(--alt);
 }
 
 .product-buy-button{
